@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.body-primary {
+  background-image: linear-gradient(
+      180deg,
+      rgba(33, 37, 41, 0.6),
+      rgba(33, 37, 41, 1) 85%,
+      #212529
+    ),
+    radial-gradient(
+      ellipse at top left,
+      rgba(13, 110, 253, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at top right,
+      rgba(255, 228, 132, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center right,
+      rgba(112.520718, 44.062154, 249.437846, 0.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at center left,
+      rgba(214, 51, 132, 0.5),
+      transparent 50%
+    );
+}
+
+.h1 {
+  letter-spacing: 10px;
+}
+
+.img-size {
+  max-height: 400px;
+  width: auto;
+}
+
+.details {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.fa-solid {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #0f141a;
+  color: white;
+}
+
+.fa-brands {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.left > .fs-6,
+.right > .fs-6 {
+  text-transform: capitalize;
+}
+
+.container__right--left * + *,
+.container__right--right * + * {
+  margin-top: 0.5 rem;
+}
